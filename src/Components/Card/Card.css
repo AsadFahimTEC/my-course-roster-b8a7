@@ -1,0 +1,35 @@
+.card {
+  width: 300px;
+  height: 370px;
+  border: 1px solid gray;
+}
+
+.photo {
+  width: 280px;
+  height: 144px;
+  border-radius: 8px;
+}
+
+.card-img {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card-btn {
+  border-radius: 8px;
+  border: 1px solid #2f80ed;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #2f80ed;
+  padding: 4px;
+  margin-left: 6px;
+  width: 280px;
+  cursor:pointer;
+  text-align: center;
+}

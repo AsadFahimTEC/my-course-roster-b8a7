@@ -74,4 +74,32 @@ font-weight: 500;
     background-color: #fff;
     }
 
-    .cart
+.cart h3{
+font-size: 18px;
+font-weight: 700;
+margin-left: 5px;
+color: #2F80ED;
+}
+
+
+
+.cart h4{
+ color: #1C1B1B;
+font-size: 20px;
+font-weight: 700;
+margin-left: 5px;
+}
+
+.list{
+color: rgba(28, 27, 27, 0.60);
+font-size: 16px;
+font-weight: 400;
+margin-left: 5px;
+}
+
+.cart h5{
+color: rgba(28, 27, 27, 0.80);
+font-size: 16px;
+font-weight: 500;
+margin-left: 5px;
+}

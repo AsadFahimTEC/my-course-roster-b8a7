@@ -5,14 +5,14 @@ import './Cart.css'
 const Cart = ({selectedAllCourses, totalCredit, remainingCredit}) => {
     return (
         <div className='cart'>
-            <h3>Credit Hour Remaining: {remainingCredit} hr </h3>
+            <h3>Credit Hour Remaining {remainingCredit} hr </h3>
             <hr />
-            <h3>Course Name</h3>
+            <h4>Course Name</h4>
             {
-                selectedAllCourses.map(course=>(<li key={course.id}>{course.name}</li>
+                selectedAllCourses.map(course=>(<li className='list' key={course.id}>{course.name}</li>
             ))}
             <hr />
-            <h3>Total Credit Hour: {totalCredit}</h3>
+            <h5>Total Credit Hour: {totalCredit}</h5>
             <hr />
         </div>
     );

@@ -8,6 +8,7 @@ import swal from 'sweetalert';
 const Card = () => {
   const [allCourses, setAllCourses] = useState([])
   const [selectedAllCourses, setSelectedAllCourses] = useState([])
+  const [totalCredit, setTotalCredit] = useState([0])
 
   useEffect(() =>{
     fetch('./data.json')
@@ -18,14 +19,26 @@ const Card = () => {
 
   const handleSelectCourse = (course) =>{
     const isExist = selectedAllCourses.find((item)=>item.id===course.id);
+    let count = course.credit;
     if(isExist){
       return swal("Opps, Sorry!", "Alreay Added", "error");
     }
     else{
-      setSelectedAllCourses([...selectedAllCourses, course]);
-    }
+      selectedAllCourses.forEach(item=>{
+        count = count + item.credit; 
+  });
+
+  if(count > 20){
+    return swal("Sorry!", "Your Credit is Limited", "error");
+}
+
+else{
+  setTotalCredit(count);
+  setSelectedAllCourses([...selectedAllCourses, course]);
+}
    
-  }
+}
+}
 
   // console.log(selectedAllCourses);
  
@@ -51,7 +64,7 @@ const Card = () => {
 ))}
       </div>
       <div className="cart">
-        <Cart selectedAllCourses={selectedAllCourses}></Cart>
+        <Cart selectedAllCourses={selectedAllCourses} totalCredit={totalCredit}></Cart>
       </div>
     </div>
    </div>

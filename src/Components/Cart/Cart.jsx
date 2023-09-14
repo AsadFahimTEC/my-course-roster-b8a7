@@ -1,13 +1,19 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
+import './Cart.css'
 
-const Cart = ({selectedAllCourses}) => {
+const Cart = ({selectedAllCourses, totalCredit}) => {
     return (
-        <div>
+        <div className='cart'>
+            <h3>Credit Hour Remaining: </h3>
+            <hr />
             <h3>Course Name</h3>
             {
                 selectedAllCourses.map(course=>(<li key={course.id}>{course.name}</li>
             ))}
+            <hr />
+            <h3>Total Credit Hour: {totalCredit}</h3>
+            <hr />
         </div>
     );
 };

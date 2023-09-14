@@ -66,3 +66,12 @@ color: rgba(28, 27, 27, 0.60);
 font-size: 16px;
 font-weight: 500;
 }
+
+.cart{
+    width: 312px;
+    height: 355px;
+    border: 1px solid gray;
+    background-color: #fff;
+    }
+
+    .cart

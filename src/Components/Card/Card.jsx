@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import './Card.css'
 import Cart from '../Cart/Cart';
+import swal from 'sweetalert';
 
 
 const Card = () => {
@@ -16,9 +17,17 @@ const Card = () => {
   }, []);
 
   const handleSelectCourse = (course) =>{
-    setSelectedAllCourses([...selectedAllCourses, course]);
+    const isExist = selectedAllCourses.find((item)=>item.id===course.id);
+    if(isExist){
+      return swal("Opps, Sorry!", "Alreay Added", "error");
+    }
+    else{
+      setSelectedAllCourses([...selectedAllCourses, course]);
+    }
+   
   }
-  console.log(selectedAllCourses);
+
+  // console.log(selectedAllCourses);
  
 
   return (

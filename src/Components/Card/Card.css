@@ -33,3 +33,34 @@
   cursor:pointer;
   text-align: center;
 }
+
+.home-container{
+    display: flex;
+}
+
+.card-container{
+    width: 1050px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.title{
+color: #1C1B1B;
+font-size: 18px;
+font-weight: 600;
+margin-left: 6px;
+}
+
+.details{
+color: rgba(28, 27, 27, 0.60);
+font-size: 14px;
+font-weight: 400;
+margin-left: 6px;
+}
+
+.info{
+color: rgba(28, 27, 27, 0.60);
+font-size: 16px;
+font-weight: 500;
+}

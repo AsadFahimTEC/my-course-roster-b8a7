@@ -8,7 +8,8 @@ import swal from 'sweetalert';
 const Card = () => {
   const [allCourses, setAllCourses] = useState([])
   const [selectedAllCourses, setSelectedAllCourses] = useState([])
-  const [totalCredit, setTotalCredit] = useState([0])
+  const[remainingCredit, setCreditRemaining] = useState()
+  const [totalCredit, setTotalCredit] = useState([])
 
   useEffect(() =>{
     fetch('./data.json')
@@ -28,12 +29,15 @@ const Card = () => {
         count = count + item.credit; 
   });
 
+  const totalRemaining = 20 - count;
+
   if(count > 20){
     return swal("Sorry!", "Your Credit is Limited", "error");
 }
 
 else{
   setTotalCredit(count);
+  setCreditRemaining(totalRemaining);
   setSelectedAllCourses([...selectedAllCourses, course]);
 }
    
@@ -64,7 +68,7 @@ else{
 ))}
       </div>
       <div className="cart">
-        <Cart selectedAllCourses={selectedAllCourses} totalCredit={totalCredit}></Cart>
+        <Cart selectedAllCourses={selectedAllCourses} totalCredit={totalCredit} remainingCredit={remainingCredit}></Cart>
       </div>
     </div>
    </div>

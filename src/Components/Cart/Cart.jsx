@@ -2,10 +2,10 @@
 import React from 'react';
 import './Cart.css'
 
-const Cart = ({selectedAllCourses, totalCredit}) => {
+const Cart = ({selectedAllCourses, totalCredit, remainingCredit}) => {
     return (
         <div className='cart'>
-            <h3>Credit Hour Remaining: </h3>
+            <h3>Credit Hour Remaining: {remainingCredit} hr </h3>
             <hr />
             <h3>Course Name</h3>
             {

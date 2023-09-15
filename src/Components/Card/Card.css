@@ -118,6 +118,11 @@
   margin-bottom: 15px;
 }
 
+.hrtag{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 /* responive for tablet devices */
 
 @media screen and(min-width: 576px) and (max-width: 768px) {

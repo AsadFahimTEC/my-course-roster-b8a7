@@ -6,7 +6,7 @@ const Cart = ({ selectedAllCourses, totalCredit, remainingCredit }) => {
   return (
     <div className="carts">
       <h3>Credit Hour Remaining {remainingCredit} hr </h3>
-      <hr />
+      <hr className="hrtag" />
       <h4>Course Name</h4>
       <ol>
       {selectedAllCourses.map((course, index) => (
@@ -15,9 +15,9 @@ const Cart = ({ selectedAllCourses, totalCredit, remainingCredit }) => {
         </li>
       ))}
       </ol>
-      <hr />
+      <hr className="hrtag" />
       <h5>Total Credit Hour: {totalCredit}</h5>
-      <hr />
+      <hr className="hrtag" />
     </div>
   );
 };

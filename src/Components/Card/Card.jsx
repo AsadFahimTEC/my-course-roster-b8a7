@@ -3,7 +3,8 @@
 import React, { useEffect, useState } from "react";
 import "./Card.css";
 import Cart from "../Cart/Cart";
-import swal from "sweetalert";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import { HiOutlineBookOpen } from 'react-icons/hi';
 
@@ -25,7 +26,17 @@ const Card = () => {
     const isExist = selectedAllCourses.find((item) => item.id === course.id);
     let count = course.credit;
     if (isExist) {
-      return swal("Opps, Sorry!", "Alreay Added", "error");
+      return toast.error('Failed ! Already Added', {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+        });
+      
     } else {
       selectedAllCourses.forEach((item) => {
         count = count + item.credit;
@@ -34,7 +45,16 @@ const Card = () => {
       const totalRemaining = 20 - count;
 
       if (count > 20) {
-        return swal("Sorry!", "Your Credit is Limited", "error");
+        return toast.warn('Sorry ! Credit Finished', {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "dark",
+          });
       } else {
         setTotalCredit(count);
         setCreditRemaining(totalRemaining);
@@ -69,6 +89,7 @@ const Card = () => {
               >
                 Select
               </button>
+              <ToastContainer />
             </div>
           ))}
         </div>

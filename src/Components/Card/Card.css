@@ -1,6 +1,6 @@
 .card {
   width: 300px;
-  height: 380px;
+  height: 390px;
   border-radius: 12px;
   margin-left: 10px;
   margin-top: 10px;
@@ -62,7 +62,7 @@
   font-size: 14px;
   font-weight: 400;
   margin-left: 15px;
-  margin-top: 5px;
+  margin-right: 10px;
 }
 
 .icon{

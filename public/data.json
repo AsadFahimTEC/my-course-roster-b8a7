@@ -5,7 +5,7 @@
         "image": "https://i.ibb.co/ZJDV3vc/Rectangle-2-2.png",
         "credit": 1,
         "price":  15000,
-        "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+        "details": "C is a general-purpose, procedural programming language developed in the early 1970s at Bell Labs by Dennis Ritchie. It is one of the most influential programming languages."
     },
     {
         "id": 2,
@@ -13,7 +13,7 @@
         "image": "https://i.ibb.co/gj7HsnC/Rectangle-2-3.png",
         "credit": 2,
         "price":  25000,
-        "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+        "details": "Introduction to Algorithms is considered a fundamental and comprehensive resource for learning about algorithms and their applications.It provides various algorithmic techniques."
     },
     {
         "id": 3,
@@ -21,7 +21,7 @@
         "image": "https://i.ibb.co/VwCHXDD/Rectangle-2-4.png",
         "credit": 10,
         "price":  10000,
-        "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+        "details": "The course aims to introduce students to the C++ programming language and how it can be applied in the field of Data Structures and Algorithms."
     },
     {
         "id": 4,
@@ -29,7 +29,7 @@
         "image": "https://i.ibb.co/wL38GBF/Rectangle-3.png",
         "credit": 5,
         "price":  35000,
-        "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+        "details": "Basic data structures are fundamental building blocks in computer science and programming. It contains such as arrays, linked lists, stacks, queues, trees, graphs, and hash table."
     },
     {
         "id": 5,
@@ -37,7 +37,7 @@
         "image": "https://i.ibb.co/ZHhgDbH/Rectangle-2.png",
         "credit": 5,
         "price":  19000,
-        "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+        "details": "(OOP) in Python is a fundamental topic in Python programming. Python is a multi-paradigm programming language, and OOP is one of its primary paradigms."
     },
     {
         "id": 6,
@@ -45,7 +45,7 @@
         "image": "https://i.ibb.co/CwG80zj/Rectangle-2-5.png",
         "credit": 2,
         "price":  23000,
-        "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+        "details": "Software engineering is a multidisciplinary field that focuses on the design, development, testing, maintenance, and management of software systems."
     },
     {
         "id": 7,
@@ -53,7 +53,7 @@
         "image": "https://i.ibb.co/P4Zg0Zx/Rectangle-3-1.png",
         "credit": 5,
         "price":  35000,
-        "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+        "details": "Amazon Web Services (AWS) is a leading cloud computing platform and a subsidiary of Amazon.com. It offers a wide range of cloud computing services in IT infrastructure."
     },
     {
         "id": 8,
@@ -61,7 +61,7 @@
         "image": "https://i.ibb.co/X3GyQy5/Rectangle-2-1.png",
         "credit": 5,
         "price":  19000,
-        "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+        "details": "MySQL is a widely used relational database management system (RDBMS) that is open-source and known for its speed, reliability, and ease of use."
     },
     {
         "id": 9,
@@ -69,6 +69,6 @@
         "image": "https://i.ibb.co/ZHBTZBn/Rectangle-2-6.png",
         "credit": 2,
         "price":  23000,
-        "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+        "details": "Problem-solving is a critical aspect of many fields, including mathematics, computer science, engineering, business, and everyday life. It refers to the process of finding solutions."
     }
 ]

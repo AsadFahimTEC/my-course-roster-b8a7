@@ -2,6 +2,8 @@
   width: 300px;
   height: 370px;
   border-radius: 12px;
+  margin-left: 10px;
+  margin-top: 10px;
   background-color: whitesmoke;
 }
 
@@ -31,75 +33,78 @@
   padding: 4px;
   margin-left: 6px;
   width: 280px;
-  cursor:pointer;
+  cursor: pointer;
   text-align: center;
 }
 
-.home-container{
-    display: flex;
+.home-container {
+  display: flex;
 }
 
-.card-container{
-    width: 1050px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    background: #fff;
+.card-container {
+  width: 1050px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
 }
 
-.title{
-color: #1C1B1B;
-font-size: 18px;
-font-weight: 600;
-margin-left: 6px;
+.title {
+  color: #1c1b1b;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 15px;
+  margin-left: 15px;
 }
 
-.details{
-color: rgba(28, 27, 27, 0.60);
-font-size: 14px;
-font-weight: 400;
-margin-left: 6px;
+.details {
+  color: rgba(28, 27, 27, 0.6);
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 15px;
+  margin-top: 5px;
 }
 
-.info{
-color: rgba(28, 27, 27, 0.60);
-font-size: 16px;
-font-weight: 500;
+.info {
+  color: rgba(28, 27, 27, 0.6);
+  font-size: 16px;
+  font-weight: 500;
 }
 
-.cart{
-    width: 312px;
-    height: 355px;
-    border: 1px solid gray;
-    background-color: #fff;
-    }
-
-.cart h3{
-font-size: 18px;
-font-weight: 700;
-margin-left: 5px;
-color: #2F80ED;
+.cart {
+  width: 312px;
+  height: 355px;
+  background-color: whitesmoke;
+  margin-top: 10px;
 }
 
-
-
-.cart h4{
- color: #1C1B1B;
-font-size: 20px;
-font-weight: 700;
-margin-left: 5px;
+.cart h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  color: #2f80ed;
 }
 
-.list{
-color: rgba(28, 27, 27, 0.60);
-font-size: 16px;
-font-weight: 400;
-margin-left: 5px;
+.cart h4 {
+  color: #1c1b1b;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  margin-left: 5px;
 }
 
-.cart h5{
-color: rgba(28, 27, 27, 0.80);
-font-size: 16px;
-font-weight: 500;
-margin-left: 5px;
+.list {
+  color: rgba(28, 27, 27, 0.6);
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+
+.cart h5 {
+  color: rgba(28, 27, 27, 0.8);
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 5px;
+  margin-bottom: 15px;
 }

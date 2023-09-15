@@ -8,11 +8,13 @@ const Cart = ({ selectedAllCourses, totalCredit, remainingCredit }) => {
       <h3>Credit Hour Remaining {remainingCredit} hr </h3>
       <hr />
       <h4>Course Name</h4>
-      {selectedAllCourses.map((course) => (
-        <li className="list" key={course.id}>
+      <ol>
+      {selectedAllCourses.map((course, index) => (
+        <li className="list" key={index + 1}>
           {course.name}
         </li>
       ))}
+      </ol>
       <hr />
       <h5>Total Credit Hour: {totalCredit}</h5>
       <hr />

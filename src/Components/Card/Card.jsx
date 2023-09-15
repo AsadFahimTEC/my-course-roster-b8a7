@@ -1,8 +1,13 @@
+/* eslint-disable react/jsx-no-undef */
 /* eslint-disable react/jsx-key */
 import React, { useEffect, useState } from "react";
 import "./Card.css";
 import Cart from "../Cart/Cart";
 import swal from "sweetalert";
+
+import { HiOutlineBookOpen } from 'react-icons/hi';
+
+
 
 const Card = () => {
   const [allCourses, setAllCourses] = useState([]);
@@ -55,7 +60,8 @@ const Card = () => {
               </p>
               <div className="info">
                 <p>$ Price: {course.price}</p>
-                <p>Credit: {course.credit}</p>
+                <p><HiOutlineBookOpen className="icon" /></p>
+                <p> Credit: {course.credit} hr</p>
               </div>
               <button
                 onClick={() => handleSelectCourse(course)}

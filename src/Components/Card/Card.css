@@ -126,11 +126,6 @@
 /* responsive for tablet devices */
 
 @media screen and (max-width: 768px) {
-  .card {
-    width: calc(50% -20px);
-    margin: 10px 0;
-  }
-
   .card-container {
     width: 100%;
     grid-template-columns: repeat(2, 1fr);
